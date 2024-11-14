@@ -9,3 +9,7 @@ function convertir() {
   const cantidad = parseFloat(document.getElementById("cantidad").value);
   const moneda = document.getElementById("moneda").value;
 }
+if (isNaN(cantidad) || cantidad <= 0) {
+  alert("Por favor, ingresa una cantidad válida");
+  return;
+}
