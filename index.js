@@ -14,5 +14,8 @@ if (isNaN(cantidad) || cantidad <= 0) {
   return;
 }
 
+const tasa = tasasDeCambio[moneda];
+const resultado = cantidad * tasa;
+
 alert("Por favor, ingresa una cantidad válida");
 return;
