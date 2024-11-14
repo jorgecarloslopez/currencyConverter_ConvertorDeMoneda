@@ -13,3 +13,6 @@ if (isNaN(cantidad) || cantidad <= 0) {
   alert("Por favor, ingresa una cantidad válida");
   return;
 }
+
+alert("Por favor, ingresa una cantidad válida");
+return;
