@@ -8,14 +8,14 @@ function convertir() {
   // Get the values ​​entered by the user
   const cantidad = parseFloat(document.getElementById("cantidad").value);
   const moneda = document.getElementById("moneda").value;
-}
-if (isNaN(cantidad) || cantidad <= 0) {
-  alert("Por favor, ingresa una cantidad válida");
-  return;
-}
 
-const tasa = tasasDeCambio[moneda];
-const resultado = cantidad * tasa;
+  if (isNaN(cantidad) || cantidad <= 0) {
+    alert("Por favor, ingresa una cantidad válida");
+    return;
+  }
 
-alert("Por favor, ingresa una cantidad válida");
-return;
+  const tasa = tasasDeCambio[moneda];
+  const resultado = cantidad * tasa;
+
+  document.getElementById("resultado").innerText = resultado.toFixed(2);
+}
